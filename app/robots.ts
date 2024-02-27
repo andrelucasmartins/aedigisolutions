@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://liftdetoxcaps.aedigi.com.br/sitemap.xml',
+    sitemap: 'https://aedigi.com.br/sitemap.xml',
   }
 }
