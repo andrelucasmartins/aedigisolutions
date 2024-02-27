@@ -8,7 +8,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AE Digi Solutions",
-  description: "Criação de sites e sistemas, desenvolvimento de aplicações web, e-commerce e muito mais.",
+  description:
+    "Criação de sites e sistemas, desenvolvimento de aplicações web, e-commerce e muito mais.",
+  verification: {
+    google: "psTI9M2KFhTJ2Yghx7YsQOQHx1tjLH-pSnqXDpibn",
+  },
 };
 
 export default function RootLayout({
