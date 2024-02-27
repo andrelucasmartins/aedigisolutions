@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Criação de sites e sistemas, desenvolvimento de aplicações web, e-commerce e muito mais.",
   verification: {
-    google: "psTI9M2KFhTJ2Yghx7YsQOQHx1tjLH-pSnqXDpibn",
+    google: "psTI9M2KFhTJ2Yghx7YsQOQHx1tjLH-pSnqXDpibn8M",
   },
 };
 
