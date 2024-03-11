@@ -299,7 +299,7 @@ export default function AboutPage() {
   );
 }
 
-function ActivityIcon(props) {
+function ActivityIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -318,7 +318,7 @@ function ActivityIcon(props) {
   );
 }
 
-function GoalIcon(props) {
+function GoalIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -339,7 +339,7 @@ function GoalIcon(props) {
   );
 }
 
-function HelpingHandIcon(props) {
+function HelpingHandIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -359,7 +359,7 @@ function HelpingHandIcon(props) {
   );
 }
 
-function OptionIcon(props) {
+function OptionIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -379,7 +379,7 @@ function OptionIcon(props) {
   );
 }
 
-function SearchIcon(props) {
+function SearchIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -399,7 +399,7 @@ function SearchIcon(props) {
   );
 }
 
-function UserIcon(props) {
+function UserIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -419,7 +419,7 @@ function UserIcon(props) {
   );
 }
 
-function ViewIcon(props) {
+function ViewIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
