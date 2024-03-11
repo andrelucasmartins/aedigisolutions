@@ -19,6 +19,16 @@ const nextConfig = {
   compiler: {
     removeConsole: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        //  port: '',
+        // pathname: '/andrelucasmartins/**',
+      },
+    ],
+  },
   async headers() {
     return [
       {
