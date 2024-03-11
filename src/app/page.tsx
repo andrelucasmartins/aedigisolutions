@@ -15,9 +15,9 @@ export default function Home() {
               A leading managed IT services provider
             </h1>
             <p className="text-lg">
-              We'll keep your systems running and proactively fix problems
-              before you're aware of them We'll respond to your service request
-              in 15 minutes or less
+              We&apos;ll keep your systems running and proactively fix problems
+              before you&apos;re aware of them We&apos;ll respond to your
+              service request in 15 minutes or less
             </p>
             <Button className="w-fit mt-8" asChild>
               <Link
