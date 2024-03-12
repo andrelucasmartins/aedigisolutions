@@ -1,3 +1,4 @@
+import { CountUpAnimation } from "@/components/count-up-animation";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-foreground">
       <section className="text-secondary mx-4">
-        <div className="flex justify-between items-center gap-8 max-w-7xl sm:mx-auto py-16 sm:py-24 flex-col sm:flex-row sm:direction-reverse">
+        <div className="flex justify-between items-center gap-8 max-w-7xl sm:mx-auto pt-16 sm:py-24  sm:flex-row flex-col-reverse">
           <div className="flex flex-col space-y-4">
             <p className="text-xl font-bold text-primary">
               IT solutions for the new age
@@ -31,7 +32,7 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-          <div>
+          <div className="w-full sm:w-9/12">
             <Image
               src="https://github.com/andrelucasmartins.png"
               alt="André Ezequiel"
@@ -42,24 +43,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" py-14  mx-4">
+      <section className="py-14 sm:pb-14  mx-4">
         <div className="flex justify-around items-center gap-8 max-w-7xl  sm:mx-auto  py-20 bg-background rounded-md flex-col sm:flex-row text-center sm:text-start">
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-6xl font-bold">12</h3>
-            <p className="text-lg">Years of experience</p>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-6xl font-bold">75k</h3>
-            <p className="text-lg">Satisfied clients worldwide</p>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-6xl font-bold">73k</h3>
-            <p className="text-lg">Project has been completed</p>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-6xl font-bold">4.8</h3>
-            <p className="text-lg">Companies success rate</p>
-          </div>
+          <CountUpAnimation targetValue={12} text="Years of experience" />
+          <CountUpAnimation
+            targetValue={75}
+            targetAfterValue={"k"}
+            text="Satisfied clients worldwide"
+          />
+          <CountUpAnimation
+            targetValue={73}
+            targetAfterValue={"k"}
+            text="Project has been completed"
+          />
+          <CountUpAnimation targetValue={4.8} text="Companies success rate" />
         </div>
       </section>
       <section className="flex flex-col max-w-3xl mx-4 sm:mx-auto text-secondary pb-16">
