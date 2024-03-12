@@ -46,7 +46,7 @@ export const Header = (props: HeaderProps) => {
     >
       <div className="container max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <h1 className="text-3xl font-bold text-primary">AE Digi Solutions</h1>
-        <nav className="space-x-4 hidden sm:block">
+        <nav className="space-x-4 hidden lg:block">
           {MENU.map((item) => (
             <Link
               className={
@@ -65,7 +65,7 @@ export const Header = (props: HeaderProps) => {
           <ThemeSwitch />
 
           <Button className="hidden sm:block">faça um orçamento</Button>
-          <div className="visible sm:hidden">
+          <div className="visible lg:hidden">
             <Sheet>
               <SheetTrigger>
                 <FaBars size={24} />
