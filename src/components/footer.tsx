@@ -15,7 +15,7 @@ interface FooterProps {}
 export function Footer(props: FooterProps) {
   return (
     <footer className="bg-black text-white">
-      <div className="grid grid-flow-col auto-cols-max justify-between items-center py-20 max-w-7xl lg:mx-auto gap-4 mx-4">
+      <div className="grid grid-flow-row auto-rows-max sm:grid-flow-col sm:auto-cols-max justify-center  sm:justify-between items-center py-20 max-w-7xl lg:mx-auto gap-4 mx-4">
         <p className="text-3xl font-bold col-span-1 max-w-[300px]">
           Se inscreva para receber novidades
         </p>
