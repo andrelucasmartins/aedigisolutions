@@ -9,28 +9,49 @@ import {
 } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
 interface FooterProps {}
 
 export function Footer(props: FooterProps) {
   return (
-    <footer className="bg-black text-white">
-      <div className="grid grid-flow-row auto-rows-max sm:grid-flow-col sm:auto-cols-max justify-center  sm:justify-between items-center py-20 max-w-7xl lg:mx-auto gap-4 mx-4">
-        <p className="text-3xl font-bold col-span-1 max-w-[300px]">
-          Se inscreva para receber novidades
+    <footer className="bg-black text-white  scroll-mt-10" id="contact">
+      <div className="flex flex-col  items-center py-20 max-w-7xl mx-auto gap-4 px-4">
+        <p className="text-3xl font-bold w-full flex-1 text-center mb-4">
+          {"Let's talk about your project?"}
         </p>
-        <form className="flex dark col-span-11">
+        <form className="grid grid-cols-4  dark gap-4 w-full">
           <Input
-            placeholder="Digite o seu nome"
+            placeholder="Insert your name"
             type="text"
-            className="rounded-none bg-black border-white h-16 text-xl"
+            className=" bg-black border-white h-16 text-xl col-span-4"
           />
           <Input
-            placeholder="Digite seu e-mail"
+            placeholder="Insert your e-mail"
             type="email"
-            className="rounded-none bg-black border-white h-16 text-xl"
+            className=" bg-black border-white h-16 text-xl col-span-4"
           />
-          <Button className="rounded-none h-16 text-xl">Quero receber</Button>
+          <Input
+            placeholder="(xx) xxxxx-xxxx"
+            type="tel"
+            className=" bg-black border-white h-16 text-xl  col-span-4 md:col-span-2"
+            maxLength={15}
+          />
+          <Input
+            placeholder="Subject"
+            type="text"
+            className=" bg-black border-white h-16 text-xl col-span-4 md:col-span-2"
+          />
+          <Textarea
+            placeholder="Type your message here."
+            className=" bg-black border-white h-48 text-xl  col-span-4"
+            rows={5}
+          />
+          <div className="grid grid-cols-subgrid h-16 text-xl col-span-4">
+            <Button className=" h-16 text-xl col-span-4 sm:col-span-2 sm:col-end-6 auto-cols-auto">
+              Send
+            </Button>
+          </div>
         </form>
       </div>
       <div className="bg-white text-black px-4">
@@ -38,7 +59,7 @@ export function Footer(props: FooterProps) {
           <p className="text-center mt-4 md:self-end">
             © {new Date().getFullYear()} AE Digi Solutions. All rights reserved
           </p>
-          <div className="flex flex-col justify-center space-x-4 mt-4 items-center sm::items-end">
+          <div className="flex flex-col justify-center space-x-4 mt-4 items-center sm:items-end">
             <nav className="flex flex-row gap-2">
               <Link
                 href={
@@ -64,7 +85,7 @@ export function Footer(props: FooterProps) {
                 <FaX size={24} />
               </Link>
             </nav>
-            <p className="text-center mt-4">Desenvolvido por: André Ezequiel</p>
+            <p className="text-center mt-4">developed by: André Ezequiel</p>
           </div>
         </div>
       </div>
